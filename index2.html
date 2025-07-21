@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sendmessage() {
+            let x = 10;
+            console.log("hai js");
+            console.log(x);
+        }
+        sendmessage();
+
+        function check() {
+            if (true) {
+                let name = "webdevelopment";
+                console.log(name);
+            }
+        }
+        check();
+
+        function first() {
+            console.log("this is my first function");
+        }
+
+        function seconf(callback) {
+            console.log("this is my second function");
+            callback(); 
+        }
+
+        seconf(first);
+
+        let count = 0;
+        let input = () => {
+            count++;
+            console.log(count);
+            if (count == 5) {
+                console.log("Count reached 5!");
+                count = 0;
+            }
+        };
+
+        
+        for (let i = 0; i < 6; i++) {
+            input();
+        }
+    </script>
+</body>
+</html>
