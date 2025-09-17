@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //set is a collection of unique values
+        let email=new Set([]);
+        email.add("ccccc@gmail.com");
+        email.add("jjjjj@gmail.com");
+        email.add("cj@gmail.com");
+        console.log(email)
+        email.add("cj@gmail.com");
+        console.log(email)
+
+        for(let mail of email){
+            console.log(email);
+        }
+        email.forEach(x =>{
+            console.log(x)
+        })
+        let adminperm= new Set(["write","read","delete"])
+        let userperm= new Set(["read"]);
+
+        function hasPerm(role,perm){
+            return role.has(perm);
+        }
+        console.log(hasPerm(adminperm,"delete"));
+        console.log(hasPerm(userperm,"delete"));
+        
+        //map
+        let user1={name:"sanj"};
+        let user2={name:"dharsh"};
+        let map=new Map();
+        map.set(user1," hi MR san!");
+        map.set(user2," hi MR cj!");
+        console.log(map)
+        for(let detail of map.value){
+            console.log(detail)
+        }
+    </script>
+</body>
+</html>
+        
+
+
+
+        
+
+
+
+
+
+
+        
+        
+    </script>
+</body>
+</html>
