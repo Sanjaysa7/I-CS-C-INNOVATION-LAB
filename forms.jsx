@@ -36,7 +36,16 @@ function forms() {
         />
         <button type="submit">submit</button>
 
+
     </form>
+    {submittedData && (
+        <div>
+            <h2>submitted Data</h2>
+            <p><strong>name:</strong>{submittedData.name}</p>
+            <p><strong>email:</strong>{submittedData.email}</p>
+            <p><strong>password:</strong>{submittedData.password}</p>
+        </div>
+    )}
     </div>
   )
 }
